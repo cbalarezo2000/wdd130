@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link> rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    
+    <main>
+        <form> 
+            <div class="form-item column2"> 
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-item column2"> 
+            <label for="useremail">Email</label>
+            <input type="email" id="useremail" name="useremail" required>
+            </div>
+
+            <div class="form-item column1">
+            <label for="browser">What is your preferred web browser?</label>
+            <select id="browser" name="browser" required>
+                <option value="">Chrome</option>
+                <option value="chrome">Firefox</option>
+                <option value="firefox">Edge</option>
+                <option value="safari">Brave</option>
+                <option value="edge">Other</option>
+            </select>
+            </div>
+
+            <div class="form-item column1">
+            <label for="pet">Do you have a pet?</label>
+            <input type="checkbox" id="pet" name="pet">
+            </div>
+
+            <div class="form-item">
+            <label for="feedback">List the places you have lived:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Ecuador, Colombia"></textarea>
+            </div>
+            
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+    
+    <footer> 
+
+    </footer>
+</body>
+</html>
