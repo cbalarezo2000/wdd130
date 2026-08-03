@@ -53,7 +53,7 @@ label, input, button, select, textarea {
 }
 
 label {
-  text-align: right;
+  text-align: left;
   padding-right: 1rem;
 }
 
@@ -61,6 +61,10 @@ input, select, textarea {
   padding: 0.5rem;
   font-size: 1.1rem;
 }
+
+input, select{
+    display: grid;
+    grid-template-columns: 1fr 2fr;}
 
 input[type="checkbox"] {
   width: 22px;
