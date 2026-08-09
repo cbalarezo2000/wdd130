@@ -33,11 +33,12 @@ h2 {
 }
 
 
+/* HEADER */
+
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    margin: 0 auto;
     padding: 20px;
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -67,12 +68,14 @@ header nav a:hover {
 }
 
 
+/* HERO */
+
 .hero {
     position: relative;
     margin: 5px auto;
 }
 
-.hero > img {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -110,6 +113,8 @@ header nav a:hover {
 }
 
 
+/* ABOUT PAGE */
+
 .history {
     max-width: 840px;
     margin: 30px auto;
@@ -137,6 +142,44 @@ header nav a:hover {
     height: auto;
 }
 
+.adventures {
+    max-width: 840px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #777;
+}
+
+.adventures h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+
+/* CONTACT PAGE */
 
 .contact-info {
     margin: 25px auto;
@@ -153,7 +196,6 @@ header nav a:hover {
     font-weight: bold;
 }
 
-
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -168,7 +210,6 @@ header nav a:hover {
     height: 450px;
     border: 0;
 }
-
 
 form {
     display: grid;
@@ -261,41 +302,203 @@ form button:hover {
     outline: 1px solid var(--primary-color);
 }
 
-.adventures {
-    max-width: 840px;
-    margin: 30px auto;
-    padding: 20px;
-    border: 1px solid #777;
-}
+/* TRIPS PAGE */
 
-.adventures h2 {
-    margin-bottom: 20px;
+.contact-us {
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
 
-.adventure-gallery {
-    display: flex;
-    justify-content: space-between;
+.contact-us h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.contact-us p {
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.contact-us a {
+    display: inline-block ;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
-.adventure-gallery figure {
-    flex: 1;
-    margin: 0;
+.trips > h2 {
+    grid-column: 1 / -1;
     text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: #ffffff;
 }
 
-.adventure-gallery img {
+.trips div {
+    padding: 10px;
+    border: 1px solid #003845;
+}
+
+.trips img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-.adventure-gallery figcaption {
-    margin-top: 8px;
-    color: var(--text-color);
-    font-size: 0.9rem;
+.trips h2 {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+
 }
+
+.trips p {
+    padding: 10px;
+    line-height: 1.2;
+    font-size: 18px;
+
+}
+
+.table {
+    margin: auto;
+    padding: 10px;
+}
+
+.table h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td{
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #777;
+} 
+
+.table th {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* HOME PAGE */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+
+}
+
+.about article {
+    padding: 10px;
+    border: 1px solid #777;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.about article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.about h2{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.about p {
+    padding: 10px;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hero p{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero div{
+    text-align: center;
+}
+.newsletter {
+    position: relative;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px;
+    margin: auto;
+}
+
+.newsletter-content {
+    text-align:center;
+}
+
+.newsletter h2 {
+    color: #ffffff;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.newsletter img {
+    width: 100%;
+    height: auto;
+}
+
+.newsletter form{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 350px;
+}
+
+.newsletter form label {
+    color: var(--primary-color);
+}
+
+/* FOOTER */
 
 footer {
     display: flex;
